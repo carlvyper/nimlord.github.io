@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+        .navbar .brand {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        .navbar ul li {
+            display: inline;
+        }
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .navbar ul li a:hover,
+        .navbar ul li a.active {
+            background-color: #555;
+        }
+
+        /* Product Gallery Section */
+        .product-gallery {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .product-gallery h3 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .product-card {
+            width: 250px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 10px;
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .product-card h4 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        .product-card .price {
+            font-size: 1.1em;
+            color: #28a745;
+            margin-bottom: 10px;
+        }
+        .product-card p {
+            color: #555;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        .product-card .btn {
+            padding: 8px 15px;
+            background-color: #28a745;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: background-color 0.3s;
+        }
+        .product-card .btn:hover {
+            background-color: #218838;
+        }
+
+        /* Footer Styling */
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #aaa;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="brand">My Product</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html" class="active">Product</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Product Gallery Section -->
+    <div class="product-gallery">
+        <h3>Our Products</h3>
+        <div class="products">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <img src="product1.jpg" alt="Product 1">
+                <h4>Product 1</h4>
+                <div class="price">$19.99</div>
+                <p>This is a brief description of Product 1. It's a high-quality item that offers great value.</p>
+                <a href="buy.html" class="btn">Buy Now</a>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <img src="product2.jpg" alt="Product 2">
+                <h4>Product 2</h4>
+                <div class="price">$29.99</div>
+                <p>This is a brief description of Product 2. It's crafted with care and attention to detail.</p>
+                <a href="buy.html" class="btn">Buy Now</a>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <img src="product3.jpg" alt="Product 3">
+                <h4>Product 3</h4>
+                <div class="price">$39.99</div>
+                <p>This is a brief description of Product 3. Ideal for customers looking for reliability.</p>
+                <a href="buy.html" class="btn">Buy Now</a>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <img src="product4.jpg" alt="Product 4">
+                <h4>Product 4</h4>
+                <div class="price">$49.99</div>
+                <p>This is a brief description of Product 4. Exceptional quality at an affordable price.</p>
+                <a href="buy.html" class="btn">Buy Now</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

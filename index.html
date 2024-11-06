@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - NimlordMwiti Company</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #a54a7f;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+        .navbar .brand {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        .navbar ul li {
+            display: inline;
+        }
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .navbar ul li a:hover,
+        .navbar ul li a.active {
+            background-color: #555;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('hero.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #29c429;
+            text-align: center;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        /* About Us Section */
+        .about {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .about h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .about p {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 0 auto 20px auto;
+            max-width: 800px;
+        }
+
+        /* Featured Products Section */
+        .featured-products {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .featured-products h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .product-card {
+            width: 250px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 10px;
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .product-card h4 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        .product-card .price {
+            font-size: 1.1em;
+            color: #28a745;
+            margin-bottom: 10px;
+        }
+        .product-card p {
+            color: #555;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        .product-card .btn {
+            padding: 8px 15px;
+            background-color: #28a745;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: background-color 0.3s;
+        }
+        .product-card .btn:hover {
+            background-color: #218838;
+        }
+
+        /* Footer Styling */
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #aaa;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="brand">NimlordMwiti Company</a>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h1><b>Welcome to NimlordMwiti Company</b></h1>
+            <p><b><i>Your trusted source for quality products that meet your lifestyle needs.</i></b></p>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="about">
+        <h2>About Us</h2>
+        <p>NimlordMwiti Company is committed to providing top-quality products with innovation, reliability, and customer satisfaction at the core. Our journey began with a vision to enhance lives, and we have grown into a brand recognized for our commitment to excellence. Explore our range of products designed with you in mind!</p>
+    </div>
+
+    <!-- Featured Products Section -->
+    <div class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="products">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <img src="product1.jpg" alt="Product 1">
+                <h4>Product 1</h4>
+                <div class="price">$19.99</div>
+                <p>Our best-selling product, designed for quality and performance.</p>
+                <a href="product.html" class="btn">Learn More</a>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <img src="product2.jpg" alt="Product 2">
+                <h4>Product 2</h4>
+                <div class="price">$29.99</div>
+                <p>Experience innovation with this must-have item for everyday use.</p>
+                <a href="product.html" class="btn">Learn More</a>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <img src="product3.jpg" alt="Product 3">
+                <h4>Product 3</h4>
+                <div class="price">$39.99</div>
+                <p>Reliability and quality combined for exceptional value.</p>
+                <a href="product.html" class="btn">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 NimlordMwiti Company. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
